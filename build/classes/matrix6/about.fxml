@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="319.0" fitWidth="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ali.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lab3" layoutX="80.0" layoutY="45.0" prefHeight="31.0" prefWidth="223.0" stylesheets="@Application.css" text="code for iraq" />
+      <Label fx:id="lab4" layoutX="15.0" layoutY="216.0" prefHeight="31.0" prefWidth="339.0" stylesheets="@Application.css" text="في حالة حدوث عطل ما يرجا الاتصال على الرقم التالي " />
+      <Label fx:id="lab5" layoutX="74.0" layoutY="254.0" prefHeight="20.0" prefWidth="215.0" stylesheets="@Application.css" text="07705528322    //   علي حازم" />
+      <Label fx:id="lab6" layoutX="54.0" layoutY="14.0" prefHeight="31.0" prefWidth="284.0" stylesheets="@Application.css" text="تم تصميم هذا البرنامج بواسطة " />
+   </children>
+</AnchorPane>
