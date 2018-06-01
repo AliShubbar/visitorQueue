@@ -62,7 +62,11 @@ public class VisitorController implements Initializable {
         loadDataVisitor();
     }
     
-    
+    public void clear(){
+            txtName.clear();
+            txtStat.clear();
+        
+    }
     
         public void loadDataVisitor(){
         

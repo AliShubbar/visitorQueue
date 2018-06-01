@@ -22,6 +22,7 @@ public class Matrix6 extends Application {
    Scene scene = new Scene(root,1200,700);
    scene.getStylesheets().add(getClass().getResource("Application.css").toExternalForm());
    primaryStage.setScene(scene);
+   primaryStage.setTitle("Login page");
    primaryStage.show();
   } catch(Exception e) {
    e.printStackTrace();

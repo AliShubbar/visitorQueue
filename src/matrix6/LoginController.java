@@ -63,7 +63,7 @@ public class LoginController implements Initializable {
                 Scene scene = new Scene(root);
             
                 userStage.setScene(scene);
-                userStage.setTitle("الموظفين");
+                userStage.setTitle("About Me");
                 userStage.setResizable(false);
                 userStage.show();
    
@@ -81,7 +81,7 @@ public class LoginController implements Initializable {
         
         try {
             if (loginModel.isLogin(txtName.getText(), TxtPass.getText())){
-                isConnected.setText("User Name and Password is correct");
+                isConnected.setText("الاسم والرقم السري صحيح");
                 
             AnchorPane pane = FXMLLoader.load(getClass().getResource("visitor.fxml"));
             aliAnchor.getChildren().setAll(pane);
