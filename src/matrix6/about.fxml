@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="516.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="516.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="lab3" layoutX="148.0" layoutY="45.0" prefHeight="41.0" prefWidth="223.0" stylesheets="@Application.css" text="code for iraq" />
+      <VBox prefHeight="380.0" prefWidth="518.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="lab3" layoutX="148.0" layoutY="45.0" prefHeight="41.0" prefWidth="223.0" style="-fx-text-fill: #013243;" stylesheets="@Application.css" text="code for iraq" />
       <Label fx:id="lab4" layoutY="232.0" prefHeight="31.0" prefWidth="518.0" stylesheets="@Application.css" text="تواصلوا معنا من خلال طرق التواصل التالية" />
-      <Label fx:id="lab6" layoutY="14.0" prefHeight="31.0" prefWidth="518.0" stylesheets="@Application.css" text="تم تصميم هذا البرنامج بواسطة مبادرة" />
-      <Text fx:id="lab7" layoutX="158.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="alihazim@codeforiraq.org علي حازم 07705528322   " textAlignment="CENTER" wrappingWidth="202.0" />
+      <Label fx:id="lab6" layoutY="-2.0" prefHeight="41.0" prefWidth="518.0" style="-fx-text-fill: #013243;" stylesheets="@Application.css" text="تم تصميم هذا البرنامج بواسطة مبادرة" />
+      <ImageView fitHeight="161.0" fitWidth="181.0" layoutX="168.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/C4I.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lab41" layoutY="259.0" prefHeight="55.0" prefWidth="528.0" style="-fx-alignment: center;" stylesheets="@Application.css" text="Email : alihazim@codeforiraq.org">
+         <font>
+            <Font name="Times New Roman Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab411" layoutX="10.0" layoutY="305.0" prefHeight="55.0" prefWidth="528.0" style="-fx-alignment: center;" stylesheets="@Application.css" text="Phone Number : 07705528322 ">
+         <font>
+            <Font name="Times New Roman Italic" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -210,20 +210,15 @@ public void UpdateVisitorList(){
 @FXML
 public void about() throws IOException{
     
-     Stage userStage = new Stage();
-                FXMLLoader loader = new FXMLLoader();
-                Pane root = (Pane)loader.load(getClass().getResource("about.fxml"));
-
-                
-                
-                VisitorController visiocontroller = (VisitorController)loader.getController();
-                
-                Scene scene = new Scene(root);
+            FXMLLoader fxmlloder  = new FXMLLoader(getClass().getResource("about.fxml"));
+            Parent root1 =(Parent ) fxmlloder.load();
+            Stage stage = new Stage();
+            stage.setTitle("About ME");
+            stage.setScene(new Scene(root1));
+            stage.show();
             
-                userStage.setScene(scene);
-                userStage.setTitle("About me");
-                userStage.setResizable(false);
-                userStage.show();
+            
+            stage.setResizable(false);
 }
 
 @FXML

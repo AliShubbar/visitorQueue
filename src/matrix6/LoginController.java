@@ -51,21 +51,15 @@ public class LoginController implements Initializable {
         void handAboutAction(ActionEvent event ){
         try {
             
+            FXMLLoader fxmlloder  = new FXMLLoader(getClass().getResource("about.fxml"));
+            Parent root1 =(Parent ) fxmlloder.load();
+            Stage stage = new Stage();
+            stage.setTitle("About ME");
+            stage.setScene(new Scene(root1));
+            stage.show();
             
-                Stage userStage = new Stage();
-                FXMLLoader loader = new FXMLLoader();
-                Pane root = (Pane)loader.load(getClass().getResource("about.fxml"));
+            stage.setResizable(false);
 
-                
-                
-                VisitorController visiocontroller = (VisitorController)loader.getController();
-                
-                Scene scene = new Scene(root);
-            
-                userStage.setScene(scene);
-                userStage.setTitle("About Me");
-                userStage.setResizable(false);
-                userStage.show();
    
             
             

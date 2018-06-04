@@ -19,7 +19,7 @@
    <children>
       <VBox layoutX="429.0" layoutY="160.0" minHeight="300.0" prefHeight="537.0" prefWidth="342.0">
          <children>
-            <HBox alignment="CENTER" maxWidth="200.0" prefHeight="34.0" prefWidth="226.0" style="-fx-border-color: blue; -fx-border-width: 0px 0px 2px 0px;">
+            <HBox alignment="CENTER" maxWidth="200.0" prefHeight="34.0" prefWidth="226.0" style="-fx-border-color: #013243; -fx-border-width: 0px 0px 2px 0px;">
                <children>
                   <TextField fx:id="txtName" prefHeight="40.0" promptText="User Name" style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
                      <HBox.margin>
@@ -30,7 +30,7 @@
                   <Insets left="60.0" top="140.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER" maxWidth="200.0" prefHeight="17.0" prefWidth="126.0" style="-fx-border-color: blue; -fx-border-width: 0px 0px 2px 0px;">
+            <HBox alignment="CENTER" maxWidth="200.0" prefHeight="17.0" prefWidth="126.0" style="-fx-border-color: #013243; -fx-border-width: 0px 0px 2px 0px;">
                <children>
                   <PasswordField fx:id="TxtPass" promptText="password" style="-fx-background-color: transparent; -fx-prompt-text-fill: black;">
                      <HBox.margin>
@@ -65,19 +65,19 @@
             </Label>
          </children>
       </VBox>
-      <HBox fx:id="hbTitel" layoutX="-26.0" layoutY="39.0" prefHeight="118.0" prefWidth="1465.0">
+      <HBox fx:id="hbTitel" layoutX="-26.0" layoutY="14.0" prefHeight="118.0" prefWidth="1465.0">
          <children>
-            <Text fx:id="t1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="Ministr Of Helth" textAlignment="CENTER">
+            <Text fx:id="t1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="Ministr Of Helth" textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="160.0" top="20.0" />
                </HBox.margin>
             </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="Maysan Center For Tumors Treatment" textAlignment="CENTER" wrappingWidth="374.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="Maysan Center For Tumors Treatment" textAlignment="CENTER" wrappingWidth="374.0">
                <HBox.margin>
                   <Insets left="-270.0" top="80.0" />
                </HBox.margin>
             </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="Maysan Health Directorte" textAlignment="CENTER" wrappingWidth="251.9375">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="Maysan Health Directorte" textAlignment="CENTER" wrappingWidth="251.9375">
                <HBox.margin>
                   <Insets left="-320.0" top="50.0" />
                </HBox.margin>
@@ -93,17 +93,17 @@
                   <Image url="@../photo/Maysan.jpg" />
                </image>
             </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="وزارة الصحة " textAlignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="وزارة الصحة " textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="290.0" top="20.0" />
                </HBox.margin>
             </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="دائرة صحة ميسان" textAlignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="دائرة صحة ميسان" textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="-120.0" top="50.0" />
                </HBox.margin>
             </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #3742fa; -fx-font-size: 24;" text="مركز ميسان لعلاج الاورام" textAlignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: BLACK; -fx-font-size: 24;" text="مركز ميسان لعلاج الاورام" textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="-170.0" top="80.0" />
                </HBox.margin>
