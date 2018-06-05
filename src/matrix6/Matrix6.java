@@ -29,10 +29,10 @@ public class Matrix6 extends Application {
   }
     }
 
-   public static void infoForAddNewVisitor(String message){
+   public static void infoForAddNewVisitor(String message) {
        
        Alert alert = new Alert(AlertType.INFORMATION);
-       alert.setTitle("info for adding new");
+       alert.setTitle("Whatch out");
        alert.setHeaderText(null);
        alert.setContentText(message);
        alert.showAndWait();

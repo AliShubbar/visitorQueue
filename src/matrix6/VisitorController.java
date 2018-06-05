@@ -101,9 +101,17 @@ public class VisitorController implements Initializable {
     
     @FXML
     public void addNewUser() throws SQLException{
+       
+    
         
             String name = txtName.getText();
             String stat = txtStat.getText();
+            
+            if(stat.isEmpty() && name.isEmpty()){
+                Matrix6.infoForAddNewVisitor("رجاء قم بادخال اسم المراجع وحالة انتظاره");
+            }else{
+                
+            
             
             String query = "INSERT INTO visitors(name , status) VALUES(?,?)";
             
@@ -124,6 +132,9 @@ public class VisitorController implements Initializable {
                 
                 preper.execute();
                 preper.close();
+            
+            
+            //else prac
             }
                 
             
@@ -132,7 +143,7 @@ public class VisitorController implements Initializable {
             Matrix6.infoForAddNewVisitor("تمت اضافة    "+name +"    بنجاح");
                 
                 
-            }
+            }}
     
     static String tempVisitorName;
     @FXML
@@ -158,7 +169,16 @@ public class VisitorController implements Initializable {
     
 public void deleteVisitor(){
     
+    
     String name = null;
+    
+    if (name.isEmpty()){
+        
+    Matrix6.infoForAddNewVisitor("قم بتحديد العنصر المراد حذفه اولا");
+  
+    }else{
+        
+    }
     try{
             visitorData visitor = (visitorData)tablePres.getSelectionModel().getSelectedItem();
             String query = "delete from visitors where name=?";
@@ -183,6 +203,12 @@ public void deleteVisitor(){
 
 @FXML
 public void UpdateVisitorList(){
+    
+    if(txtName.getText().isEmpty() || txtStat.getText().isEmpty()){
+     Matrix6.infoForAddNewVisitor("قم بالضغط على الاسم والحالة المراد تعديلها ثم اضفط على تعديل ");
+
+        
+    }else{
      String query = "update visitors set name=? , status=? where name = '"+tempVisitorName+"'";
 
         try {
@@ -198,7 +224,7 @@ public void UpdateVisitorList(){
             
         } catch (SQLException ex) {
             System.out.println(ex);
-        }
+        }}
        
             
 
@@ -235,6 +261,8 @@ void singout() throws IOException{
 public void deleteAllVisitor(){
     
     String name = null;
+    
+
     try{
             visitorData visitor = (visitorData)tablePres.getSelectionModel().getSelectedItem();
             String query = "delete  from visitors";
