@@ -38,15 +38,7 @@
     
 }
 
-#lab3{
-    -fx-font-weight: bold;
-    -fx-alignment: CENTER;
-    -fx-font-family: "Times New Roman";
-    -fx-text-fill: #9980FA;
-    -fx-font-size: 28px; 
-    -fx-font-style: italic;
-    
-}
+
 
 
 #lab4{
@@ -210,4 +202,11 @@
     -fx-font-size: 16px;
     -fx-text-fill: #013243;
     
+}
+
+#bob{
+ 
+   
+    
+   
 }

@@ -1,32 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="516.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="600.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrix6.AboutController">
    <children>
-      <VBox prefHeight="380.0" prefWidth="518.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Label fx:id="lab3" layoutX="148.0" layoutY="45.0" prefHeight="41.0" prefWidth="223.0" style="-fx-text-fill: #013243;" stylesheets="@Application.css" text="code for iraq" />
-      <Label fx:id="lab4" layoutY="232.0" prefHeight="31.0" prefWidth="518.0" stylesheets="@Application.css" text="تواصلوا معنا من خلال طرق التواصل التالية" />
-      <Label fx:id="lab6" layoutY="-2.0" prefHeight="41.0" prefWidth="518.0" style="-fx-text-fill: #013243;" stylesheets="@Application.css" text="تم تصميم هذا البرنامج بواسطة مبادرة" />
-      <ImageView fitHeight="161.0" fitWidth="181.0" layoutX="168.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../photo/C4I.jpg" />
-         </image>
-      </ImageView>
-      <Label fx:id="lab41" layoutY="259.0" prefHeight="55.0" prefWidth="528.0" style="-fx-alignment: center;" stylesheets="@Application.css" text="Email : alihazim@codeforiraq.org">
-         <font>
-            <Font name="Times New Roman Italic" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="lab411" layoutX="10.0" layoutY="305.0" prefHeight="55.0" prefWidth="528.0" style="-fx-alignment: center;" stylesheets="@Application.css" text="Phone Number : 07705528322 ">
-         <font>
-            <Font name="Times New Roman Italic" size="24.0" />
-         </font>
-      </Label>
+      <HBox prefHeight="380.0" prefWidth="516.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button maxHeight="63.0" minWidth="60.0" mnemonicParsing="false" onAction="#codeForIraq" prefHeight="100.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photo/ali.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="40.0" top="120.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="63.0" minWidth="60.0" mnemonicParsing="false" onAction="#bpoutApplication" prefHeight="100.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photo/download%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="-60.0" top="250.0" />
+               </HBox.margin>
+            </Button>
+            <HBox prefHeight="40.0" prefWidth="287.0" style="-fx-border-color: #2c3e50; -fx-border-width: 0px 0px 2px 0px;">
+               <children>
+                  <Label fx:id="lab4" prefHeight="42.0" prefWidth="272.0" style="-fx-text-alignment: center;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="330.0" left="70.0" right="-120.0" top="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="lab3" contentDisplay="CENTER" prefHeight="264.0" prefWidth="321.0" style="-fx-text-alignment: center; -fx-alignment: center; -fx-background-color: rgba(255, 255, 255, 0.90); -fx-background-radius: 50;" stylesheets="@Application.css">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-150.0" right="60.0" top="80.0" />
+               </HBox.margin>
+            </Label>
+            <Button maxHeight="63.0" minWidth="60.0" mnemonicParsing="false" onAction="#contactUs" prefHeight="100.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <graphic>
+                  <ImageView fitHeight="67.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photo/download%20(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="-60.0" top="250.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="63.0" minWidth="60.0" mnemonicParsing="false" onAction="#OurTeame" prefHeight="100.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photo/download.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="40.0" top="120.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
